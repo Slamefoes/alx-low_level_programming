@@ -10,32 +10,28 @@
  *
  * Return: 0;
  */
-int main(int argc, char *argv[])
+
+int main(int argc, char **argv)
 {
-	int sum = 0, i;
-
-	if (argc > 1)
+	int i, n, sum = 0;
+	char *flag;
+	if (argc < 2)
 	{
-		for  (i = 1; i < argc; i++)
-		{
-			int b;
-			char *str;
+		printf("0\n");
+		return (0);
+	}
 
-			str = argv[i];
-			for (b = 0; str[b] != '\0'; b++)
-			{
-				if (str[b] < 48 || str[b] > 57)
-				{
-					printf("Error\n"
-							return (1);
-							}
-							}
-							}
-							}
-							for (i = 1; i < argc; i++)
-							{
-							sum += atoi(argv[i]
-									}
-									printf("%d\n", sum);
-									return (0);
-									}
+	for (i = 1; argv[i]; i++)
+	{
+		n = strtol(argv[i], &flag, 10);
+		if (*flag)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		else
+			sum += n;
+	}
+	printf("%d\n", sum);
+	return (0);
+}
