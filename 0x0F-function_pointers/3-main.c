@@ -4,7 +4,7 @@
  * main - program that performs simple operations
  * @argc: number of arguments
  * @argv: array of arguments
- * 
+ *
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 
 	arg1 = atoi(argv[1]);
-	arg2 = atoi(argb[3]);
+	arg2 = atoi(argc(2));
 
 	func = get_op_func(argv[2]);
 
