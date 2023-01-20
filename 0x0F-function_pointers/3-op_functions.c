@@ -17,7 +17,7 @@ int op_add(int a, int b)
  * @a: first integer
  * @b: second integer
  *
- * Return: difference of a and b 
+ * Return: difference of a and b
  */
 int op_sub(int a, int b)
 {
@@ -25,11 +25,11 @@ int op_sub(int a, int b)
 }
 
 /**
- * op-mul - calculates the product of two integers
- * @a: first integer
- * @b: second integer
+ * op_mul - multiplies two numbers.
+ * @a: first number.
+ * @b: second number.
  *
- * Return: product of a and b
+ * Return: multiplication.
  */
 int op_mul(int a, int b)
 {
@@ -37,11 +37,11 @@ int op_mul(int a, int b)
 }
 
 /**
- * op-div - calculates the division of two integers
- * @a: first integer
- * @b: second integer
+ * op_div - divides two numbers.
+ * @a: first number.
+ * @b: second number.
  *
- * Return: result of the division of a and b
+ * Return: division.
  */
 int op_div(int a, int b)
 {
@@ -57,5 +57,5 @@ int op_div(int a, int b)
  */
 int op_mob(int a, int b)
 {
-	return (a % b)
+	return (a % b);
 }
