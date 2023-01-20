@@ -1,17 +1,17 @@
 #include "3-calc.h"
 
 /**
- * main - program that performs simple operations
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - check the code for ALX students.
+ * @argc: argument count.
+ * @argv: argument vector.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*operation)(int, int);
-
+	
 	if (argc != 4)
 	{
 		printf("Error\n");
